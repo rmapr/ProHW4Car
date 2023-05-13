@@ -1,6 +1,4 @@
-package travelCar;
-
-import java.text.DecimalFormat;
+package travelCar_1;
 
 public class Car {
     double tankVolume;
@@ -9,10 +7,6 @@ public class Car {
     String carName;
 
     public Car() {
-    }
-
-    public Car(String carName) {
-        this.carName = carName;
     }
 
     public Car(double tankVolume, double restTank, double fuelConsumption) {
@@ -37,14 +31,14 @@ public class Car {
         if (way > 0) return way;
         else return 0;
     }
-    public static void printCarTth(Car car) {
+    static void printCarTth(Car car) {
         System.out.printf("Авто - %s" +
                         "\nВміст паливного баку, л - %s" +
                         "\nЗалишки палива, л - %s" +
                         "\nВитрати пального, л/100км - %s\n",
                 car.carName, car.tankVolume, car.restTank, car.fuelConsumption);
     }
-    public static double calcCost(double volume, double price){
+    static double calcCost(double volume, double price){
         return volume * price;
     }
 }

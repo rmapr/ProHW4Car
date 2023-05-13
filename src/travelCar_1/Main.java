@@ -1,4 +1,4 @@
-package travelCar;
+package travelCar_1;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -108,6 +108,5 @@ public class Main {
             System.out.println("Заправка не потрібна, решти палива вистачить проїхати " +
                     dist + "км. Щасливої дороги!");
         }
-
     }
 }
